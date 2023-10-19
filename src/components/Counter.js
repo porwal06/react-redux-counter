@@ -8,8 +8,8 @@ const Counter = () => {
   const dispatch = useDispatch();
   // const selector = useSelector();
   // console.log(selector);
-  const counterNumber = useSelector((state) => state.counter);
-  const showToggle = useSelector((state) => state.show);
+  const counterNumber = useSelector((state) => state.counterStore.counter);
+  const showToggle = useSelector((state) => state.counterStore.show);
   const toggleCounterHandler = () => {
     dispatch(counterActions.toggle());
   };
